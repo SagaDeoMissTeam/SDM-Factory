@@ -1,0 +1,21 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "test"
+	group: ""
+	id: "77C9BC4A3F6909AB"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "2E32CEEEECCD1FAB"
+		tasks: [{
+			id: "224791D1C1691BDF"
+			item: "minecraft:coarse_dirt"
+			type: "item"
+		}]
+		x: 1.0d
+		y: -1.0d
+	}]
+	title: "Test"
+}

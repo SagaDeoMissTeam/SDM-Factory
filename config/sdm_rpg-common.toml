@@ -1,0 +1,26 @@
+
+#Настройка времени очисти истории для каждого из журналов.
+#Setting up the history clearing time for each of the logs.
+[HISTORY]
+	#История убийств мобов приручёнными животными игрока
+	#The story of mobs being killed by the player's tamed animals
+	PETS_KILL = 50
+	#История использованных предметов
+	#The history of the items used
+	ITEMS_USE = 50
+	#История использования тотемов бессмертия во время битвы
+	#The history of the use of immortality totems during battle
+	USE_TOTEM_ON_BATTLE = 50
+	#История использования предметов во время битвы
+	#The history of using items during the battle
+	USE_ITEM_ON_BATTLE = 50
+	#История полученного урона во время битвы
+	#The history of damage received during the battle
+	DAMAGE_GOT_ON_BATTLE = 50
+	#История комбо убийств
+	#The history of combo murders
+	COMBO_KILL_ENTITY = 50
+	#История последовательного убийства мобов
+	#The story of the sequential killing of mobs
+	SEQUENCE_KILL_ENTITY = 50
+

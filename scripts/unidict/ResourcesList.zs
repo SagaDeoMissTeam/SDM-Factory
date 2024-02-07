@@ -1,0 +1,103 @@
+
+import crafttweaker.api.item.IItemStack;
+import crafttweaker.api.ingredient.IIngredient;
+import crafttweaker.api.tag.type.KnownTag;
+import stdlib.List;
+
+public class ResourcesList{
+    public static val RESOURCES as IRemoveble[] = [
+        new IResourcesList([<item:techreborn:aluminum_ingot>], [<tag:items:forge:ingots/aluminum>, <tag:items:c:aluminum_ingots>]),
+        new IResourcesList([<item:techreborn:brass_ingot>], [<tag:items:forge:ingots/brass>, <tag:items:c:brass_ingots>]),
+        new IResourcesList([<item:techreborn:bronze_ingot>], [<tag:items:c:bronze_ingots>, <tag:items:forge:ingots/bronze>]),
+        new IResourcesList([<item:techreborn:electrum_ingot>], [<tag:items:forge:ingots/electrum>, <tag:items:c:electrum_ingots>]),
+        new IResourcesList([<item:techreborn:invar_ingot>], [<tag:items:forge:ingots/invar>, <tag:items:c:invar_ingots>]),
+        new IResourcesList([<item:techreborn:iridium_ingot>], [<tag:items:forge:ingots/iridium>, <tag:items:c:iridium_ingots>]),
+        new IResourcesList([<item:techreborn:lead_ingot>], [<tag:items:c:lead_ingots>, <tag:items:forge:ingots/lead>]),
+        new IResourcesList([<item:techreborn:nickel_ingot>], [<tag:items:forge:ingots/nickel>, <tag:items:c:nickel_ingots>]),
+        new IResourcesList([<item:techreborn:platinum_ingot>], [<tag:items:forge:ingots/platinum>, <tag:items:c:platinum_ingots>]),
+        new IResourcesList([<item:techreborn:silver_ingot>], [<tag:items:c:silver_ingots>, <tag:items:forge:ingots/silver>]),
+        new IResourcesList([<item:techreborn:steel_ingot>], [<tag:items:forge:ingots/steel>, <tag:items:c:steel_ingots>, <tag:items:ad_astra_platform:steel_ingots>]),
+        new IResourcesList([<item:techreborn:tin_ingot>], [<tag:items:c:tin_ingots>, <tag:items:forge:ingots/tin>]),
+        new IResourcesList([<item:techreborn:titanium_ingot>], [<tag:items:forge:ingots/titanium>, <tag:items:c:titanium_ingots>]),
+        new IResourcesList([<item:techreborn:tungsten_ingot>], [<tag:items:forge:ingots/tungsten>, <tag:items:c:tungsten_ingots>]),
+        new IResourcesList([<item:techreborn:zinc_ingot>], [<tag:items:c:zinc_ingots>, <tag:items:forge:ingots/zinc>]),
+        new IResourcesList([<item:nuclearcraft:graphite_ingot>], [<tag:items:forge:ingots/graphite>]),
+        new IResourcesList([<item:nuclearcraft:lithium_ingot>], [<tag:items:forge:ingots/lithium>]),
+        new IResourcesList([<item:nuclearcraft:zircaloy_ingot>], [<tag:items:forge:ingots/zircaloy>]),
+        new IResourcesList([<item:nuclearcraft:thorium_ingot>], [<tag:items:forge:ingots/thorium>]),
+        new IResourcesList([<item:nuclearcraft:zirconium_molybdenum_ingot>], [<tag:items:forge:ingots/zirconium_molybdenum>]),
+        new IResourcesList([<item:nuclearcraft:palladium_ingot>], [<tag:items:forge:ingots/palladium>]),
+        new IResourcesList([<item:nuclearcraft:beryllium_ingot>], [<tag:items:forge:ingots/beryllium>]),
+        new IResourcesList([<item:nuclearcraft:zinc_ingot>], [<tag:items:c:zinc_ingots>, <tag:items:forge:ingots/zinc>]),
+        new IResourcesList([<item:nuclearcraft:magnesium_ingot>], [<tag:items:forge:ingots/magnesium>]),
+        new IResourcesList([<item:nuclearcraft:sodium_ingot>], [<tag:items:forge:ingots/sodium>]),
+        new IResourcesList([<item:mekanism:ingot_uranium>], [<tag:items:forge:ingots/uranium>]),
+        new IResourcesList([<item:nuclearcraft:potassium_ingot>], [<tag:items:forge:ingots/potassium>]),
+        new IResourcesList([<item:nuclearcraft:cobalt_ingot>], [<tag:items:forge:ingots/cobalt>]),
+        new IResourcesList([<item:nuclearcraft:manganese_ingot>], [<tag:items:forge:ingots/manganese>]),
+        new IResourcesList([<item:nuclearcraft:niobium_ingot>], [<tag:items:forge:ingots/niobium>]),
+        new IResourcesList([<item:nuclearcraft:zirconium_ingot>], [<tag:items:forge:ingots/zirconium>]),
+        new IResourcesList([<item:nuclearcraft:chromium_ingot>], [<tag:items:forge:ingots/chromium>, <tag:items:c:chromium_ingots>]),
+        new IResourcesList([<item:nuclearcraft:calcium_ingot>], [<tag:items:forge:ingots/calcium>]),
+        new IResourcesList([<item:nuclearcraft:strontium_ingot>], [<tag:items:forge:ingots/strontium>]),
+        new IResourcesList([<item:nuclearcraft:osmium_ingot>], [<tag:items:forge:ingots/osmium>]),
+        new IResourcesList([<item:nuclearcraft:hafnium_ingot>], [<tag:items:forge:ingots/hafnium>]),
+        new IResourcesList([<item:nuclearcraft:boron_ingot>], [<tag:items:forge:ingots/boron>]),
+        new IResourcesList([<item:nuclearcraft:nichrome_ingot>], [<tag:items:forge:ingots/nichrome>]),
+        new IResourcesList([<item:nuclearcraft:osmiridium_ingot>], [<tag:items:forge:ingots/osmiridium>]),
+        new IResourcesList([<item:electrodynamics:ingotvanadium>], [<tag:items:forge:ingots/vanadium>]),
+        new IResourcesList([<item:electrodynamics:ingothslasteel>], [<tag:items:forge:ingots/hslasteel>, <tag:items:forge:ingots/hsla_steel>]),
+        new IResourcesList([<item:megacells:sky_steel_ingot>], [<tag:items:forge:ingots/sky_steel>]),
+        new IResourcesList([<item:ad_astra:desh_ingot>], [<tag:items:forge:ingots/desh>, <tag:items:ad_astra_platform:desh_ingots>]),
+        new IResourcesList([<item:ad_astra:ostrum_ingot>], [<tag:items:forge:ingots/ostrum>, <tag:items:ad_astra_platform:ostrum_ingots>]),
+        new IResourcesList([<item:ad_astra:calorite_ingot>], [<tag:items:forge:ingots/calorite>, <tag:items:ad_astra_platform:calorite_ingots>]),
+        new IResourcesList([], []),
+        new IResourcesList([<item:techreborn:tin_ingot>], [<tag:items:forge:ingots/tin>, <tag:items:c:tin_ingots>]),
+        new IResourcesList([<item:techreborn:advanced_alloy_plate>], [<tag:items:forge:plates/advanced_alloy>, <tag:items:c:advanced_alloy_plates>]),
+        new IResourcesList([<item:techreborn:aluminum_plate>], [<tag:items:c:aluminum_plates>, <tag:items:forge:plates/aluminum>]),
+        new IResourcesList([<item:techreborn:brass_plate>], [<tag:items:forge:plates/brass>, <tag:items:c:brass_plates>]),
+        new IResourcesList([<item:techreborn:bronze_plate>], [<tag:items:forge:plates/bronze>, <tag:items:c:bronze_plates>]),
+        new IResourcesList([<item:techreborn:carbon_plate>], [<tag:items:forge:plates/carbon>, <tag:items:c:carbon_plates>]),
+        new IResourcesList([<item:techreborn:chrome_plate>], [<tag:items:forge:plates/chromium>, <tag:items:c:chromium_plates>]),
+        new IResourcesList([<item:techreborn:coal_plate>], [<tag:items:forge:plates/coal>, <tag:items:c:coal_plates>]),
+        new IResourcesList([<item:techreborn:copper_plate>], [<tag:items:forge:plates/copper>, <tag:items:c:copper_plates>]),
+        new IResourcesList([<item:techreborn:diamond_plate>], [<tag:items:c:diamond_plates>, <tag:items:forge:plates/diamond>]),
+        new IResourcesList([<item:techreborn:electrum_plate>], [<tag:items:forge:plates/electrum>, <tag:items:c:electrum_plates>]),
+        new IResourcesList([<item:techreborn:emerald_plate>], [<tag:items:forge:plates/emerald>, <tag:items:c:emerald_plates>]),
+        new IResourcesList([<item:techreborn:gold_plate>], [<tag:items:forge:plates/gold>, <tag:items:c:gold_plates>]),
+        new IResourcesList([<item:techreborn:invar_plate>], [<tag:items:c:invar_plates>,<tag:items:forge:plates/invar>]),
+        // new IResourcesList([<item:techreborn:iridium_alloy_plate>], [<tag:items:c:iridium_alloy_plates>, <tag:items:forge:plates/iridium_alloy>]),
+        new IResourcesList([<item:techreborn:iridium_plate>], [<tag:items:c:iridium_plates>, <tag:items:forge:plates/iridium>]),
+        new IResourcesList([<item:techreborn:iron_plate>], [<tag:items:ad_astra_platform:iron_plates>, <tag:items:forge:plates/iron>, <tag:items:c:iron_plates>]),
+        // new IResourcesList([<item:techreborn:lapis_plate>], [<tag:items:forge:plates/lapis>, <tag:items:c:lapis_plates>]),
+        // new IResourcesList([<item:techreborn:lazurite_plate>], [<tag:items:c:lazurite_plates>, <tag:items:forge:plates/lazurite>]),
+        new IResourcesList([<item:techreborn:lead_plate>], [<tag:items:forge:plates/lead>, <tag:items:c:lead_plates>]),
+        // new IResourcesList([<item:techreborn:magnalium_plate>], [<tag:items:c:magnalium_plates>, <tag:items:forge:plates/magnalium>]),
+        new IResourcesList([<item:techreborn:nickel_plate>], [<tag:items:c:nickel_plates>, <tag:items:forge:plates/nickel>]),
+        new IResourcesList([<item:techreborn:obsidian_plate>], [<tag:items:c:obsidian_plates>, <tag:items:forge:plates/obsidian>]),
+        // new IResourcesList([<item:techreborn:peridot_plate>], [<tag:items:forge:plates/peridot>, <tag:items:c:peridot_plates>]),
+        new IResourcesList([<item:techreborn:platinum_plate>], [<tag:items:c:platinum_plates>, <tag:items:forge:plates/platinum>]),
+        // new IResourcesList([<item:techreborn:quartz_plate>], [<tag:items:forge:plates/quartz>, <tag:items:c:quartz_plates>]),
+        // new IResourcesList([<item:techreborn:red_garnet_plate>], [<tag:items:c:red_garnet_plates>, <tag:items:forge:plates/red_garnet>]),
+        // new IResourcesList([<item:techreborn:redstone_plate>], [<tag:items:c:redstone_plates>, <tag:items:forge:plates/redstone>]),
+        // new IResourcesList([<item:techreborn:refined_iron_plate>], [<tag:items:c:refined_iron_plates>, <tag:items:forge:plates/refined_iron>]),
+        // new IResourcesList([<item:techreborn:ruby_plate>], [<tag:items:c:ruby_plates>, <tag:items:forge:plates/ruby>]),
+        new IResourcesList([<item:techreborn:silver_plate>], [<tag:items:forge:plates/silver>, <tag:items:c:silver_plates>]),
+        new IResourcesList([<item:techreborn:steel_plate>], [<tag:items:forge:plates/steel>, <tag:items:c:steel_plates>, <tag:items:c:steel_plates>, <tag:items:ad_astra_platform:steel_plates>]),
+        new IResourcesList([<item:techreborn:tin_plate>], [<tag:items:forge:plates/tin>, <tag:items:c:tin_plates>]),
+        new IResourcesList([<item:techreborn:titanium_plate>], [<tag:items:forge:plates/titanium>, <tag:items:c:titanium_plates>]),
+        new IResourcesList([<item:techreborn:tungsten_plate>], [<tag:items:forge:plates/tungsten>, <tag:items:c:tungsten_plates>]),
+        new IResourcesList([<item:techreborn:zinc_plate>], [<tag:items:forge:plates/zinc>, <tag:items:c:zinc_plates>]),
+        // new IResourcesList([], [<tag:items:forge:plates/chromium>, <tag:items:c:chromium_plates>]),
+        // new IResourcesList([], [<tag:items:forge:plates/chromium>, <tag:items:c:chromium_plates>]),
+    ]; 
+
+
+    public static init() as void{
+        print("Start UNIDITCT !");
+        for d1 in RESOURCES{
+            d1.unidict();
+        }
+        print("End UNIDITCT !");
+    }
+}

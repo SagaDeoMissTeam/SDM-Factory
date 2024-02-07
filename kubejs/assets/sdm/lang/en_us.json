@@ -1,0 +1,17 @@
+{
+    "item.kubejs.wiress_rerminal" : "Peredatchick",
+
+    "sdm.corporation.tittle" : "CORPORATION",
+
+    "sdm.firstmessage" : "The transmitter is activated.\nYou need to wait until you are registered on network.\nWait for it.",
+    "sdm.connection.error.message" : "Connection rejected!",
+
+    "sdm.connection.success.message_1" : "Congratulations to you %s on successful authorization.",
+    
+    "sdm.event.start.message_1": "Abnormal activity has been observed on the planet, approximate X coordinates:%s Z: %s",
+
+    "sdm.connection.info.message_1" : "Your security clearance level is 1. You will receive information about the basic events on the planet. \nTo raise the level, you need to follow the instructions of the company and you will be promoted.",
+
+    "sdm.message_1" : "Test Message",
+    "sdm.message_2" : "Test Message"
+}
